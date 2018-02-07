@@ -20,7 +20,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     ImageView catImg;
     ImageView dogImg;
     Button purpleBtn;
-    Button buttonDrkblue;
+    Button btnDrkblue;
     Button maroonBtn;
     Button redBtn;
     Button brownBtn;
@@ -30,6 +30,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        //variable declarations are done here
         birdTxt = findViewById(R.id.birdTxt);
         birdTxt.setVisibility(View.INVISIBLE);
         catTxt = findViewById(R.id.catTxt);
@@ -42,7 +43,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dogImg = findViewById(R.id.thirdImg);
 
         purpleBtn = findViewById(R.id.purpleBtn);
-        buttonDrkblue = findViewById(R.id.darkBluebtn);
+        btnDrkblue = findViewById(R.id.darkBluebtn);
         maroonBtn = findViewById(R.id.maroonBtn);
         redBtn = findViewById(R.id.redBtn);
         brownBtn = findViewById(R.id.brownBtn);
@@ -51,7 +52,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         dogImg.setOnClickListener(this);
 
         purpleBtn.setOnClickListener(this);
-        buttonDrkblue.setOnClickListener(this);
+        btnDrkblue.setOnClickListener(this);
         maroonBtn.setOnClickListener(this);
         redBtn.setOnClickListener(this);
         brownBtn.setOnClickListener(this);
@@ -62,6 +63,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
         @Override
         public void onClick(View view) {
 
+        // this case will set the text of the selected image. Others will become invisible
         switch(view.getId()){
             case R.id.firstImg:
                 if(birdTxt.getVisibility() == View.INVISIBLE){
@@ -105,7 +107,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 }
 
 
-                // set color of selected image
+                // This case sets the color for the image that is selected. Sets the color to purple.
             case R.id.purpleBtn:
                 if(birdTxt.getVisibility() != View.INVISIBLE)
                     birdImg.setColorFilter(Color.rgb(153,51,255), PorterDuff.Mode.SRC_IN);
@@ -117,7 +119,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.LENGTH_LONG).show();
                 break;
 
-
+            // This case sets the color for the image that is selected. Sets the color to dark blue.
             case R.id.darkBluebtn:
                 if(birdTxt.getVisibility() != View.INVISIBLE)
                     birdImg.setColorFilter(Color.rgb(0,0,102), PorterDuff.Mode.SRC_IN);
@@ -129,6 +131,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.LENGTH_LONG).show();
                 break;
 
+            // This case sets the color for the image that is selected. Sets the color to maroon.
             case R.id.maroonBtn:
                 if(birdTxt.getVisibility() != View.INVISIBLE)
                     birdImg.setColorFilter(Color.rgb(204,0,102), PorterDuff.Mode.SRC_IN);
@@ -140,6 +143,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.LENGTH_LONG).show();
                 break;
 
+            // This case sets the color for the image that is selected. Sets the color to red.
             case R.id.redBtn:
                 if(birdTxt.getVisibility() != View.INVISIBLE)
                     birdImg.setColorFilter(Color.rgb(255,0,0), PorterDuff.Mode.SRC_IN);
@@ -151,6 +155,7 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                             Toast.LENGTH_LONG).show();
                 break;
 
+            // This case sets the color for the image that is selected. Sets the color to brown.
             case R.id.brownBtn:
                 if(birdTxt.getVisibility() != View.INVISIBLE)
                     birdImg.setColorFilter(Color.rgb(153,76,0), PorterDuff.Mode.SRC_IN);

@@ -9,12 +9,14 @@
     android:orientation="vertical"
     tools:context="com.example.abhishek.assignment1.MainActivity">
 
+    //layout for bird
     <LinearLayout
         xmlns:tools="http://schemas.android.com/tools"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/firstLayer"
         android:orientation="horizontal">
+
 
         <ImageView
             android:layout_weight="1"
@@ -37,6 +39,7 @@
 
     </LinearLayout>
 
+    //layout for cat
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -64,6 +67,7 @@
 
     </LinearLayout>
 
+    //layout for dog
     <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
