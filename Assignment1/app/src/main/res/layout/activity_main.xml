@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.abhishek.assignment1.MainActivity">
+
+    <LinearLayout
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/firstLayer"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/firstImg"
+            android:layout_margin="5dp"
+            android:src="@drawable/bird"
+            android:contentDescription="@string/stringBird"
+            />
+
+        <TextView
+            android:id="@+id/birdTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/stringBird"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/SecondLayer"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_weight="1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/secondImg"
+            android:layout_margin="5dp"
+            android:src="@drawable/cat"
+            android:contentDescription="@string/stringCat"
+            />
+
+        <TextView
+            android:id="@+id/catTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/stringCat" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/thirdLayer"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/thirdImg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="1"
+            android:src="@drawable/dog"
+            android:contentDescription="@string/stringDog"/>
+
+        <TextView
+            android:id="@+id/dogTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:text="@string/stringDog"/>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:id="@+id/fourthLayer"
+        android:layout_gravity="bottom|center"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/purpleBtn"
+            android:background="#9933FF"
+            android:layout_gravity="bottom|center"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/darkBluebtn"
+            android:background="#000066"
+            android:layout_gravity="bottom|center"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/maroonBtn"
+            android:background="#CC0066"
+            android:layout_gravity="bottom|center"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/redBtn"
+            android:background="#FF0000"
+            android:layout_gravity="bottom|center"/>
+        <Button
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:id="@+id/brownBtn"
+            android:background="#994C00"
+            android:layout_gravity="bottom|center"/>
+
+    </LinearLayout>
+
+</LinearLayout>
+</ScrollView>
